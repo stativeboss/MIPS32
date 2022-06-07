@@ -4,7 +4,7 @@ This is the Capstone project of the course ["Hardware Modeling Using Verilog"](h
 **This project was intended to give an insight into how we go about modeling various sub-modules such as a register banks, and implement pipelining in a processor. As an add-on (over and above what is covered in the course), I used [SOFA](https://github.com/lnis-uofu/SOFA) to generate the timing, power, and utilization reports for the designed processor using three different IP templates**. 
 
 
-The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), the [test-bench](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips_tb.v), and the simulation results are included in this repo.
+The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), the [test-bench](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips_tb.v), and the [simulation results](https://github.com/stativeboss/MIPS32/tree/main/results) are included in this repo.
 
 ## Considerations
 - There are 32 general purpose registers (R0 to R31 each 32-bit) out of which R0 is non-writeable and contains the value 0.
