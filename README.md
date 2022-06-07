@@ -70,4 +70,5 @@ With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instruction
 |SLT | 000100|
 |MUL | 000101|
 |HLT | 111111|
-      </p>
+
+</p>
