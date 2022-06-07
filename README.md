@@ -46,13 +46,13 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
       - BNEQZ R1, LABEL // Branch to LABEL if data in R1 is not 0
       </details>
       
-* <details>
+ * <details>
       <summary>Jump Instruction</summary>
   
       - J LABEL // Jump to LABEL
       </details>
 
-* <details>
+ * <details>
       <summary>Miscellaneous Instructions</summary>
   
       - HLT // Halt
