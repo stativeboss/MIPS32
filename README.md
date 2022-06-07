@@ -51,3 +51,10 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
   
       - HLT // Halt
       </details>
+      
+
+## R-Type instruction Encoding
+
+![image](https://user-images.githubusercontent.com/14873110/172476834-9a5d6750-e088-4ef3-ade8-00d84c7a7943.png)
+
+With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instructions. Since the instruction set that's implemented in this project is small, 6-bits are enough for the Opcode.
