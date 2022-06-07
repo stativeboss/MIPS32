@@ -59,6 +59,8 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
 
 With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instructions. Since the instruction set that's implemented in this project is small, 6-bits are enough for the Opcode. The below table shows the R-Type instructions with their opcode:
 
+<p align = "centre">
+     
 | Instruction | opcode |
 | :--: | :--: |
 |ADD | 000000|
@@ -68,3 +70,4 @@ With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instruction
 |SLT | 000100|
 |MUL | 000101|
 |HLT | 111111|
+      </p>
