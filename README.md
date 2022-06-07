@@ -1,4 +1,4 @@
-# Pipeline Implementation of MIPS32 processor with reduced instruction set
+# Pipeline Implementation of MIPS32 processor
 This is the Capstone project of the course ["Hardware Modeling Using Verilog"](https://onlinecourses.nptel.ac.in/noc21_cs60/preview) by professor [Indranil Sen Gupta](http://www.facweb.iitkgp.ac.in/~isg/). I created a [wiki](https://github.com/stativeboss/MIPS32/wiki) that covers the basic theory for this project.
 
 **This project was intended to give an insight into how we go about modeling various sub-modules such as a register banks, and implement pipelining in a processor. As an add-on, I used [SOFA](https://github.com/lnis-uofu/SOFA) to generate the timing, power, and utilization reports for the designed processor**. 
