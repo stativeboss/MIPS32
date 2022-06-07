@@ -28,7 +28,7 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
       - MUL R1, R2, R3 // Multiply the data in R2 and R3 and store the result in R1
       - AND R1, R2, R3 // Perform bit-wise AND operation of the data in R2 and R3 and store the result in R1
       - OR R1, R2, R3 // Perform bit-wise OR operation of the data in R2 and R3 and store the result in R1
-      - SLT R1, R2, R3 // If the data in R2 is less than the data in R3, set R1 else R1 = 0;
+      - SLT R1, R2, R3 // If the data in R2 is less than the data in R3, set R1 else R1 = 0
       </details>
       
  * <details>
@@ -36,6 +36,24 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
   
       - ADDI R1, R2, 2 // Add data in R2 and 2, and store the result in R1
       - SUBI R1, R2, 3 // Subtract 3 from the data in R2, and store the result in R1
-      - SLTI R1, R2, 4 // If the data in R2 is less than 4, set R1 else R1 = 0;
+      - SLTI R1, R2, 4 // If the data in R2 is less than 4, set R1 else R1 = 0
+      </details>
+ 
+ * <details>
+      <summary>Branch Instructions</summary>
+  
+      - BEQZ R1, LABEL // Branch to LABEL if data in R1 is 0
+      - BNEQZ R1, LABEL // Branch to LABEL if data in R1 is not 0
       </details>
       
+* <details>
+      <summary>Jump Instruction</summary>
+  
+      - J LABEL // Jump to LABEL
+      </details>
+
+* <details>
+      <summary>Miscellaneous Instructions</summary>
+  
+      - HLT // Halt
+      </details>
