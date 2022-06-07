@@ -13,10 +13,29 @@ The verilog code, the test-bench, and the simulation results are included in thi
 - Memory is word accessible and each word is of 32-bit.
 
 ## Instruction subset used
-  - <details>
+  <details>
       <summary>Load and Store Instructions</summary>
   
       - LW R1, 20(R2) // Add 20 to the data in R2. The result is taken as an address and the data present in that memory address is stored in R1.
       - SW R1, -3(R2) // Mem [R2-3] = R1 meaning 3 is subtracted from the value in R2 and the content in R1 is stored in that memory address. 
+      </details>
+      
+  <details>
+      <summary>Arithmetic and Logic instructions with only register operands</summary>
+  
+      - ADD R1, R2, R3 // Add data in R2 and R3 and store the result in R1
+      - SUB R1, R2, R3 // Subtract the data in R3 from the data in R2 and store the result in R1
+      - MUL R1, R2, R3 // Multiply the data in R2 and R3 and store the result in R1
+      - AND R1, R2, R3 // Perform bit-wise AND operation of the data in R2 and R3 and store the result in R1
+      - OR R1, R2, R3 // Perform bit-wise OR operation of the data in R2 and R3 and store the result in R1
+      - SLT R1, R2, R3 // If the data in R2 is less than the data in R3, set R1 else R1 = 0;
+      </details>
+      
+  <details>
+      <summary>Arithmetic and Logic instructions with immediate operand</summary>
+  
+      - ADDI R1, R2, 2 // Add data in R2 and 2, and store the result in R1
+      - SUBI R1, R2, 3 // Subtract 3 from the data in R2, and store the result in R1
+      - SLTI R1, R2, 4 // If the data in R2 is less than 4, set R1 else R1 = 0;
       </details>
       
