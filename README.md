@@ -53,13 +53,12 @@ The [verilog code](https://github.com/stativeboss/MIPS32/blob/main/RTL/mips.v), 
       </details>
       
 
-## R-Type instruction Encoding
+## R-Type Instruction Encoding
 
 ![image](https://user-images.githubusercontent.com/14873110/172476834-9a5d6750-e088-4ef3-ade8-00d84c7a7943.png)
 
 With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instructions. Since the instruction set that's implemented in this project is small, 6-bits are enough for the Opcode. The below table shows the R-Type instructions with their opcode:
 
-<p align = "centre">
      
 | Instruction | opcode |
 | :--: | :--: |
@@ -71,4 +70,20 @@ With 6-bits dedicated to the Opcode, we can represent 2^6 (i.e., 64) instruction
 |MUL | 000101|
 |HLT | 111111|
 
-</p>
+So, if we have an instruction ```ADD R1, R2, R3``` , it'd be 000000 00011 00010 00001 00000 000000 which would in turn be 00620800h in Hexadecimal.
+
+## I-Type Instruction Encoding
+
+![image](https://user-images.githubusercontent.com/14873110/172482737-b29e2751-5d5e-4330-94cb-a3ac698d6eb5.png)
+
+The following table shows the I-Type instructions used along with their opcode:
+| Instruction | opcode |
+| :--: | :--: |
+|LW | 001000|
+|SW | 001001|
+|ADDI | 001010|
+|SUBI | 001011|
+|SLTI | 001100|
+|BNEQZ | 001101|
+|BEQZ | 001110|
+
