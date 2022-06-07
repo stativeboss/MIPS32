@@ -15,6 +15,7 @@ The verilog code, the test-bench, and the simulation results are included in thi
 ## Instruction subset used
   - <details>
       <summary>Load and Store Instructions</summary>
+  
       - LW R1, 20(R2) // Add 20 to the data in R2. The result is taken as an address and the data present in that memory address is stored in R1.
       - SW R1, -3(R2) // Mem [R2-3] = R1 meaning 3 is subtracted from the value in R2 and the content in R1 is stored in that memory address. 
       </details>
